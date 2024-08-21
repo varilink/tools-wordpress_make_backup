@@ -1,0 +1,10 @@
+services:
+
+  wp-make-backup:
+
+    build: tools/wordpress-make-backup
+
+    image: varilink/tools/wordpress-make-backup
+
+    volumes:
+      - ./backup/:/backup/
