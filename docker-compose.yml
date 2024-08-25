@@ -6,5 +6,8 @@ services:
 
     image: varilink/tools/wordpress-make-backup
 
+    environment:
+      - DOMAIN
+
     volumes:
       - ./backup/:/backup/
